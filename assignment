@@ -1,0 +1,21 @@
+public class ScaleneTriangle {
+    public static void main(String[] args) {
+        int side1 = 3;
+        int side2 = 4;
+        int side3 = 5;
+        boolean isScalene = isScaleneTriangle(side1, side2, side3);
+        if (isScalene) {
+            System.out.println("The triangle is a scalene triangle.");
+        } else {
+            System.out.println("The triangle is not a scalene triangle.");
+        }
+    }
+
+    public static boolean isScaleneTriangle(int side1, int side2, int side3) {
+        if (side1 != side2 && side2 != side3 && side1 != side3) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
